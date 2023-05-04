@@ -1,5 +1,4 @@
   .home-header {
-    background-image: ;
     background-blend-mode: multiply;
     background-size: cover;
     padding: 10px;
@@ -63,4 +62,159 @@
     font-size: 30px;
     color: #c679f7;
   }
-  
+
+  a:hover {
+    background-color: yellow;
+    border-radius: 30px;
+    padding: 10px;
+  }
+
+  .Google {
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+  }
+
+  a {
+    transition: all .2s;
+  }
+
+  body {
+    animation-name: bg-color-animation;
+    animation-duration: 80s;
+  }
+
+  @keyframes bg-color-animation {
+    25% {
+      background-color: red
+    }
+
+    50% {
+      background-color: yellow
+    }
+
+    75% {
+      background-color: green;
+    }
+
+    100% {
+      background-color: red;
+    }
+  }
+
+  .MyForm {
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    border-radius: 30px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(0, 0, 0);
+    border-color: black;
+  }
+
+  .Submit {
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    border-radius: 30px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(0, 0, 0);
+    border-color: black;
+  }
+
+  h3 {
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+  }
+
+  .MyForm {
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 5px 8px 2px rgba(20, 18, 18, 0.1)
+  }
+
+  input {
+    margin-top: 20px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 40px;
+    padding: 6px;
+  }
+
+  .Submit:hover {
+    color: yellow;
+    border-radius: 30px;
+    padding: 10px;
+  }
+
+  .Submit {
+    transition: all .2s;
+  }
+
+  input[type=submit] {
+    border-radius: 0px;
+  }
+
+  .stories-section {
+    background-image: linear-gradient(to bottom right, orange, yellow);
+    padding: 6px;
+    background-size: cover;
+    color: black;
+  }
+
+  .Submit {
+    background-image: linear-gradient(to bottom right, orange, yellow);
+    padding: 20px;
+    background-size: cover;
+    color: black;
+  }
+
+  .MyForm {
+    background-image: linear-gradient(to bottom right, orange, yellow);
+    padding: 20px;
+    background-size: cover;
+    color: black;
+  }
+
+  .Joke {
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+  }
+
+  .joke-title {
+    margin-top: 20px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 40px;
+    padding: 6px;
+    background-image: linear-gradient(to bottom right, orange, yellow);
+  }
+
+  .buttonj {
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    background-image: linear-gradient(to bottom right, orange, yellow);
+  }
+
+  .buttonj:hover {
+    color: yellow;
+    border-radius: 30px;
+    padding: 10px;
+    background-image: linear-gradient(to bottom right, orange, yellow);
+  }
+
+  .buttonj {
+    transition: all .2s;
+  }
