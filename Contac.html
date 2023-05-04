@@ -1,27 +1,114 @@
 <!DOCTYPE html>
 <html>
 <center>
-<div class="everything">
-<body>  
-<meta charset="utf-8">
-    <title>Tutorials Point</title>
-    <link rel="stylesheet" href="style.css">    
-    <div>
+  <div class="everything">
+
+    <body>
+      <meta charset="utf-8">
+      <title>Tutorials Point</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet"
+        href="link rel=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <div>
         <nav class="nav-bar">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="ABout.html">About</a></li>
+            <a href="index.html"><i class="fa fa-car"></i>Heim</a></li>
+            <a href="#"><i class="fa fa-car"></i>Kontakt</a></li>
+            <a href="ABout.html"><i class="fa fa-car"></i>Fragen</a></li>
           </ul>
         </nav>
       </div>
       <header>
         <div class="home-header"></div>
-        <h1 style="color: #000000; font-size: 700%; font-family: Ariel">My Portfolio</h1>
+        <h1 style="color: #000000; font-size: 700%; font-family: Ariel" id="intro">Mein Portfolio</h1>
       </header>
-    <h1>Contact who?</h1>
-<p><a href="zayd7kitkat@gmail.com">Send me an email</a></p>
-</body>  
-</div>
+      <h1>Wen kontaktieren?</h1>
+      <p><a href="zayd7kitkat@gmail.com">
+          Schick mir eine E-mail</a></p>
+  </div>
+  <h3>Benutzerdetailformular</h3>
+  <form id="MyForm" class="MyForm">
+    <label for="first-name">Vorname</label>
+    <input type="text" name="first-name" id="first-name" placeholder="Schreiben Sie hier Ihren Namen hin">
+    <label for="email"> Email</label>
+    <input type="text" name="email" id="email">
+    <label for="birthday">Geburtstag</label>
+    <input type="date" name="birthday" id="birthday">
+    <br><br>
+    <input class="Submit" type="submit" value="Senden Sie dieseFormularab">
+  </form>
+  <br>
+  <section class="stories-section">
+    <h1>mein Geschichten</h1>
+    <p>
+      Ich hoffe, ihr habt genauso viel Spaß beim Programmieren wie ich, damit wir zusammenarbeiten können, um etwas
+      Erstaunliches zu entwickeln</p>
+  </section>
+  <h1 class="joke-title">
+    Witz-Generator
+    </h>
+    <div id="jokes" class="Joke">
+
+    </div>
+    <button class="buttonj" onclick="generatorJoke()">Witz-Generator</button>
+    <footer>
+    </footer>
+    <script>
+      var first_name = "Zayd";
+      var last_name = "Rauf";
+
+      function calculateSum(firstNumber, secondNumber) {
+        var sumOFTwoNumbers = firstNumber + secondNumber;
+        return sumOFTwoNumbers;
+      }
+
+      var sum = calculateSum(5, 10);
+
+
+      console.log("sum of to nums", sum)
+
+
+      function myFunction() {
+        var FunnyEmoji = "😀";
+        console.log(FunnyEmoji);
+        alert("Hey please don't click")
+      }
+      function changeName() {
+        document.getElementById("intro").innerHTML = "Hey, How are you?"
+      }
+
+
+      document.getElementById("MyForm").addEventListener("submit", handleFormSubmit)
+
+
+      function handleFormSubmit(event) {
+        event.preventDefault()
+        var name = document.getElementById("first-name").value
+        var email = document.getElementById("email").value
+        var birthday = document.getElementById("birthday").value
+        console.log(name)
+        console.log(email)
+        console.log(birthday)
+
+        alert("Danke schön! Ihr Formular wird gesendet.")
+        document.getElementById("intro").innerHTML = name
+      }
+
+      var jokesArray = ["Warum war der Computer kalt? Weil es seine Fenster offen ließ",
+        "Warum bevorzugen Programmierer den Dark Mode? Denn Licht zieht Insekten an",
+        "Warum niesen Computer ständig? Weil es viel Cache hat", "Warum lief der Computer Runden, damit er so Megabytes verbrennen konnte"]
+      function generatorJoke() {
+        var randomNumber = Math.random() * 4;
+
+        var randomInteger = Math.floor(randomNumber)
+
+        var randomJoke = jokesArray[randomInteger]
+
+        document.getElementById("jokes").innerHTML = randomJoke;
+      }
+    </script>
+
+    </body>
 </center>
+
 </html>
